@@ -1,0 +1,35 @@
+﻿@model List<EjemploRazor.Models.MADRID>
+@{
+    ViewBag.Title = "Ejemplo3";
+}
+
+<h2>Plantilla</h2>
+
+
+    <table class="table-bordered">
+        <tr>
+            <td>DORSAL </td>
+            <td>NOMBRE</td>
+            <td>POSICION</td>
+            <td>PAIS</td>
+            <td>FECHA DE NACIMIENTO </td>
+
+
+        </tr>
+        @foreach (var jugador in @Model)
+        {
+            <tr>
+                <td>@jugador.DORSAL</td>
+                <td>@jugador.NOMBRE</td>
+                <td>@jugador.POSICION</td>
+                <td>@jugador.PAIS</td>
+                <td>@jugador.FECHA_NACIMIENTO</td>
+            </tr>
+        }
+
+
+    </table>
+
+
+
+
